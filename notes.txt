@@ -2,3 +2,6 @@ app.get("/file", (req, res) => {
   console.log(req.query.name);
   res.sendFile(__dirname + "/" + req.query.name);
 });
+
+
+//res.sendFile(`${__dirname}/db.txt`);
