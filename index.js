@@ -7,21 +7,12 @@ const password = "p455w0rd";
 app.get("/", (req, res) => {
   res.send("Hello World! use /file?name=db.txt  to see the public data");
   //res.sendFile(`${__dirname}/db.txt`);
-  console.log(password);
 });
 
-app.get("/remember", (req, res) => {
+app.get("/hard-to-guess-url-xyz", (req, res) => {
   res.send("password : " + password);
-});
-
-app.get("/file", (req, res) => {
-  console.log(req.query.name);
-  res.sendFile(__dirname + "/" + req.query.name);
 });
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
-
-// http://localhost:3000/v?name=janne
-// Hello janne
