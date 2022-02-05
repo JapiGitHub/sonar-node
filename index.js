@@ -3,14 +3,13 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => {
-  //res.send("Hello World!" + req.body);
-  res.sendFile(`${__dirname}/db.txt`);
+  res.send("Hello World! use /file?name=db.txt  to see the public data");
+  //res.sendFile(`${__dirname}/db.txt`);
 });
 
-app.get("/v", (req, res) => {
+app.get("/file", (req, res) => {
   console.log(req.query.name);
-
-  res.send("Hello " + req.query.name);
+  res.sendFile(`${__dirname}/${req.query.name}`);
 });
 
 app.listen(port, () => {
