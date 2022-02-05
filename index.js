@@ -2,9 +2,16 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+const password = "p455w0rd";
+
 app.get("/", (req, res) => {
   res.send("Hello World! use /file?name=db.txt  to see the public data");
   //res.sendFile(`${__dirname}/db.txt`);
+  console.log(password);
+});
+
+app.get("/remember", (req, res) => {
+  res.send("password : " + password);
 });
 
 app.get("/file", (req, res) => {
