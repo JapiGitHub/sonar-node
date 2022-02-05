@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 
 app.get("/file", (req, res) => {
   console.log(req.query.name);
-  res.sendFile(`${__dirname}/${req.query.name}`);
+  res.sendFile(__dirname + "/" + req.query.name);
 });
 
 app.listen(port, () => {
