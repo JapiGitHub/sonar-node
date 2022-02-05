@@ -11,6 +11,13 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
+      # node and tests with jest
+      - name: node js
+        uses: actions/setup-node@v1
+      - run: npm ci
+      - run: npm test
+
       - uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
