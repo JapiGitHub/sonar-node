@@ -7,11 +7,13 @@ const feature = function () {
 };
 feature();
 
-// infinite loop!
-var j = 0;
-while (true) {
-  j++;
+// Hello my friend stay a while and listen?
+function HelloMyFriendStayAWhileAndListen() {
+  // infinite loop!
+  while (true) {
+    console.log("greetings, my name is Deckard Cain");
+  }
 }
 
-//because of infinite loop this code is actually never reached!
+// if above function would not be inside a function this code would actually never be reached!
 module.exports = feature;
