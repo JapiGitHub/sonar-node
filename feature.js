@@ -11,7 +11,7 @@ feature();
 function HelloMyFriendStayAWhileAndListen() {
   // infinite loop!
   while (true) {
-    console.log("greetings, my name is Deckard Cain");
+    console.log("greetings, my name is Deckard Cain....");
   }
 }
 
