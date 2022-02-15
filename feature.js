@@ -1,3 +1,6 @@
+
+//GIS & metsävara trainings
+
 // as you can see, sonarLint doesn't recognize taint analysis! only sonarQube can see this!
 const feature = function () {
   const password = "p455w0rd";
