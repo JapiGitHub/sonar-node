@@ -20,5 +20,11 @@ jobs:
 
       - uses: sonarsource/sonarqube-scan-action@master
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_TOKEN: 6de2e4b1c997716300c1f74d7f6b8cfc3cedf5f3
+          SONAR_HOST_URL: https://d2bc-95-217-100-63.ngrok.io
+
+#sonar-scanner \
+#  -Dsonar.projectKey=gedgsetgsdeg \
+#  -Dsonar.sources=. \
+#  -Dsonar.host.url=https://d2bc-95-217-100-63.ngrok.io \
+#  -Dsonar.login=6de2e4b1c997716300c1f74d7f6b8cfc3cedf5f3
